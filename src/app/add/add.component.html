@@ -1,0 +1,45 @@
+<form (ngSubmit)="submitTache()">
+    <h5 class="tex-center m4">Ajouter un travail à faire</h5>
+    <div clas="form-group mt-2">
+        <input 
+          type="text"
+          name="name"
+          [(ngModel)]="nouvelleTache.name"
+          required
+          placeholder="Saissisez une tâche à faire"
+          class="form-control"
+        />
+      </div>
+      <div clas="form-group mt-2">
+        <input
+          type="text"
+          name="name"
+          [(ngModel)]="nouvelleTache.time"
+          required
+          placeholder="Saissisez un time"
+          class="form-control"
+        />
+      </div>
+      <div clas="form-group mt-2">
+        <input
+          type="text"
+          name="name"
+          [(ngModel)]="nouvelleTache.priority"
+          required
+          placeholder="Saissisez une priority"
+          class="form-control"
+        />
+      </div>
+      <div clas="form-group mt-2">
+        <input
+          type="text"
+          name="name"
+          [(ngModel)]="nouvelleTache.user"
+          required
+          placeholder="Saissisez un user"
+          class="form-control"
+        />
+      </div>
+      <button class="btn btn-dark mt-2">
+          Créer une Tâches</button>
+</form>

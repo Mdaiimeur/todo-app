@@ -1,0 +1,24 @@
+<div class="col-sm-8">
+    <div class="p-5 mn-4 bg-light rounded-3" *ngIf="TacheProfil">
+      <div class="container-fluid py-5">
+        <h2 class="display-4"> {{TacheProfil.name}}</h2>
+        <hr/>
+        <p class="col-md-8 fs-4">Temps estimé : {{TacheProfil.time}}</p>
+        <hr/>
+        <p class="col-md-8">Priorité : {{TacheProfil.priority}}</p>
+        <hr/>
+        <p class="col-md-8">Pour : {{TacheProfil.user}}</p>
+        <hr/>
+        <p class="col-md-8">Pour : {{TacheProfil.status}}</p>
+
+        
+      </div>
+    </div>
+    <div class="p-5 mn-4 bg-light rounded-3" *ngIf="! TacheProfil">
+        <div class="container-fluid py-5">
+          <h2 class="display-3">Bienvenue</h2>
+          <p class="col-md-8 fs-4">Choisissez une tâches dans le menu de gauche.</p>
+          <p class="col-md-8">Gestion de tâches</p>
+        </div>
+      </div>
+    </div>
